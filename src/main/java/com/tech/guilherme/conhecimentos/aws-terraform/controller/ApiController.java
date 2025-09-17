@@ -1,4 +1,3 @@
-package com.tech.guilherme.conhecimentos.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +9,7 @@ import java.time.Instant;
 public class ApiController {
 
     @GetMapping
-    public ResponseEntity<TimestampResponse> olaAWS(){
-        return ResponseEntity.ok(new TimestampResponse(Instant.now()));
+    public ResponseEntity<com.tech.guilherme.conhecimentos.controller.aws.terraform.TimestampResponse> helloAWS() {
+        return ResponseEntity.ok(new com.tech.guilherme.conhecimentos.controller.aws.terraform.TimestampResponse(Instant.now()));
     }
 }
