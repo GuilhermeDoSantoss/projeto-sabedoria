@@ -1,3 +1,5 @@
+// Configuração de um servidor EC2
+
 provider "aws"{
     region = "us-east-1"
 }
